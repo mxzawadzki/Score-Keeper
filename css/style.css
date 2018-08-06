@@ -1,0 +1,109 @@
+.page {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0 auto;
+  background-image: linear-gradient(315deg, #dfe9f3 0%, white 100%);
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.results {
+  margin: 0 0.5rem;
+  padding: 5vh 0;
+  align-self: center;
+}
+
+.results__title {
+  margin: 0;
+  padding: 0;
+  font-size: 4em;
+  text-align: center;
+}
+
+.results__score {
+  font-size: 2em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.results__score--winner {
+  color: #00c06d;
+}
+
+.options {
+  margin:0 1rem 1rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.options__max {
+  font-size: 1.15em;
+  letter-spacing: 0.1em;
+  margin: 0 auto 1rem;
+  grid-column: 1/5;
+}
+
+.options__max--score {
+  font-weight: bold;
+}
+
+.options__input {
+  width: 100%;
+  height: 1fr;
+  margin: 0;
+  padding: 0.5rem 1em;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #56e5Fc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  outline: none;
+  grid-column: 1/4;
+}
+
+.options__button {
+  width: 100%;
+  height: 1fr;
+  margin: 0;
+  padding: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #3a3a3a;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  grid-column: 1/5;
+}
+
+.options__button--apply {
+  grid-column: 4/5;
+}
+
+.options__button--player, .options__button--apply {
+  width: 100%;
+  display: inline-block;
+  background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+}
+
+.options__button--player:hover {
+  background-image: linear-gradient(-225deg, #afFce4 0%, #68faF3 48%, #56e5Fc 100%);
+}
+
+.options__button--reset {
+  background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+}
+
+.options__button--reset:hover {
+  background-image: linear-gradient(-225deg, #FFf3aF 0%, #FFbaaF 48%, #FF82ab 100%);
+}
+
+@media(max-width: 278px) {
+  .results__title {
+    font-size: 3em;
+  }
+}

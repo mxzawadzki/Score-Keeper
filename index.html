@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto" rel="stylesheet">
+  <script async src="js/main.js"></script>
+  <title>Document</title>
+</head>
+<body class="page">
+  <div class="wrapper">
+    <div class="results">
+      <h1 class="results__title">
+        <span class="results__score" id="playerOneDisplay">0</span> to
+        <span class="results__score" id="playerTwoDisplay">0</span>
+      </h1>
+    </div>
+    <div class="options">
+      <label for="maxScore" class="options__max">Playing to:
+        <span class="options__max--score" id="maxScoreDisplay">5</span>
+      </label>
+      <input class="options__input" name="maxScore" id="maxScore" type="number" placeholder="Set maximum score">
+      <input id="submitMaxScore" class="options__button options__button--apply" type="submit" value="Apply"> 
+      <button class="options__button options__button--player" id="playerOne">Player One</button>
+      <button class="options__button options__button--player" id="playerTwo">Player Two</button>
+      <button class="options__button options__button--reset" id="reset">Reset</button>
+    </div>
+  </div>
+</body>
+</html>
