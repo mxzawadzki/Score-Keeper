@@ -2,7 +2,7 @@
   font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0 auto;
-  background-image: linear-gradient(315deg, #dfe9f3 0%, white 100%);
+  background-image: linear-gradient(45deg, #dfe9f3 0%, white 100%);
 }
 
 .wrapper {
@@ -34,17 +34,18 @@
 }
 
 .options {
-  margin:0 1rem 1rem;
+  margin-bottom: 1rem;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
+  grid-column-gap: 1rem;
 }
 
 .options__max {
   font-size: 1.15em;
   letter-spacing: 0.1em;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   grid-column: 1/5;
 }
 
@@ -53,53 +54,71 @@
 }
 
 .options__input {
-  width: 100%;
-  height: 1fr;
-  margin: 0;
   padding: 0.5rem 1em;
+  margin: 1rem 0 1rem 1rem;
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
-  border: 1px solid #56e5Fc;
-  border-radius: 2px;
+  border: none;
+  border-radius: 50px;
   box-sizing: border-box;
   outline: none;
   grid-column: 1/4;
 }
 
 .options__button {
-  width: 100%;
-  height: 1fr;
-  margin: 0;
-  padding: 0.5rem;
+  padding: 1rem 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  color: #3a3a3a;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.1em;
   border: none;
-  border-radius: 2px;
   outline: none;
   grid-column: 1/5;
 }
 
 .options__button--apply {
+  margin: 1rem 1rem 1rem 0;
+  padding: 0.5rem 1em;
+  border-radius: 50px;
   grid-column: 4/5;
 }
 
-.options__button--player, .options__button--apply {
-  width: 100%;
-  display: inline-block;
-  background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+.options__button--apply {
+  background-image: linear-gradient(45deg,#5eeef3,#0ca7d6 80%);
 }
 
-.options__button--player:hover {
-  background-image: linear-gradient(-225deg, #afFce4 0%, #68faF3 48%, #56e5Fc 100%);
+.options__button--apply:hover {
+  background-image: linear-gradient(45deg,#6ffff4,#1db8e7 80%);
+}
+
+.options__button--player-one {
+  background: #fff;
+  color: #3a3a3a;
+  font-size: 1.5em;
+}
+
+.options__button--player-one:hover {
+  color: #ff9a44;
+}
+
+.options__button--player-two {
+  background: #3a3a3a;
+  font-size: 1.5em;
+}
+
+.options__button--player-two:hover {
+  color: #ff9a44;
 }
 
 .options__button--reset {
-  background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+  grid-column: 1/3;
+  padding: 0.2rem;
+  background-image: linear-gradient(45deg, #ff9a44 0%, #fc6076 100%);
 }
 
 .options__button--reset:hover {
-  background-image: linear-gradient(-225deg, #FFf3aF 0%, #FFbaaF 48%, #FF82ab 100%);
+  background-image: linear-gradient(45deg, #ffab55 0%, #fb7187 100%);
 }
 
 @media(max-width: 278px) {
