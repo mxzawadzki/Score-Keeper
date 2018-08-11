@@ -48,13 +48,21 @@ function reset() {
 }
 
 maxScore.addEventListener("change", function() {
-  maxScoreDisplay.textContent = this.value;
-  winningScore = Number(this.value);
-  reset();
+  if (Number(this.value) < 1) {
+    alert("Please enter number greater than 0");
+  } else {
+    maxScoreDisplay.textContent = parseInt(this.value);
+    winningScore = parseInt(Number(this.value));
+    reset();
+  }
 });
 
 submitMaxScore.addEventListener("change", function () {
-  maxScoreDisplay.textContent = maxScore.value;
-  winningScore = Number(maxScore.value);
-  reset();
+  if (Number(this.value) < 1) {
+    alert("Please enter number greater than 0");
+  } else {
+    maxScoreDisplay.textContent = parseInt(maxScore.value);
+    winningScore = parseInt(Number(this.value));
+    reset();
+  }
 });
